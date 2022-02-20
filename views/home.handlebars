@@ -1,2 +1,10 @@
-<h1>My Home Page</h1>
-<p>{{{stuff}}}</p>
+<div class="mt-4 p-5 bg-secondary text-white rounded">
+  <h1 class="display-4">{{ stock.companyName }} ({{stock.symbol}})</h1>  
+  <p class="lead">
+      <strong>Latest Price</strong>: ${{ stock.latestPrice }}
+    <br/><strong>Previous Close</strong>: ${{ stock.previousClose }}
+    <br/><strong>Change Percent</strong>: {{ stock.changePercent }}%
+    <br/><strong>Market Cap</strong>: {{ stock.marketCap }}
+    <br/><strong>YTD Change</strong>: {{ stock.ytdChange }}
+    </p>
+</div>
